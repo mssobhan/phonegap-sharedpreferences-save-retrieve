@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:27
+-keep class com.finder.location.BootCompletedIntentReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.finder.location.LocationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.finder.location.Scheduler { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.phonegaptips.googleoauth.HelloWorld { <init>(...); }
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/leaflet.css" rel="stylesheet">
+        <link href="css/leaflet.draw.css" rel="stylesheet">
+        <link href="css/nv.d3.css" rel="stylesheet">
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+        <style type="text/css">
+          .css-form input.ng-invalid.ng-dirty {
+            /*background-color: #FA787E;*/
+              outline: none;
+              box-shadow:0px 0px 7px #FA787E;
+              border-color:#FA787E;
+          }
+
+          .css-form input.ng-valid.ng-dirty {
+            /*background-color: #78FA89;*/
+              outline: none;
+              box-shadow:0px 0px 7px #78FA89;
+              border-color:#78FA89;
+          }
+
+
+        </style>
+        <!-- ionic/angularjs js -->
+        <script src="js/leaflet.js"></script>
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="js/geolocation.js"></script>
+        <script src="js/d3.js"></script>
+        <script src="js/nv.d3.js"></script>
+        <script src="js/angularjs-nvd3-directives.js"></script>
+        <script src="js/angular-cookies.js"></script>
+
+        <script src="js/angular-resource.js"></script>
+        <script src="js/angular-leaflet-directive.min.js"></script>
+        <script src="js/leaflet.draw.js"></script>
+        <title>Finder GPS Tracking</title>
+    </head>
+    <body ng-app="starter">
+        <ion-view title="Finder" ng-controller="SetupCtrl">
+            <div class="bg-image1"></div>
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+            <ion-content class="has-header">
+            <ion-list class="list list-inset">
+                <div class="card">
+                    <div class="item item divider">
+                        <img ng-src="img/finder 50px.png"> SharedPreferences Plugin
+                    </div>
+                    <div class="item item-text-wrap">
+                        <label class="item item-input">
+                            <input type="text" placeholder="Data to be saved" ng-model="data" required>
+                        </label>
+                        <label>Result is {[{save_result}]}</label><br/>
+                        <label>Result is {[{result}]}</label><br/>
+                        
+                    </div>
+                    <a class="item item-icon-left assertive" ng-click="saveChange(data)">
+                        <i class="icon ion-archive"></i>
+                        Save
+                    </a>
+                    <a class="item item-icon-left assertive" ng-click="getChange()">
+                        <i class="icon ion-archive"></i>
+                        Show
+                    </a>
+                </div>
+
+            </ion-list>
+            </ion-content>
+        </ion-view>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="sharedprefs.js"></script>
+        <!-- your app's js -->
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/javascript" src="js/geolib.js"></script>
+        <script type="text/javascript" src="js/moment.min.js"></script>
+        <script type="text/javascript">
+        Date.prototype.deductHours= function(h){
+            this.setHours(this.getHours()-h);
+            return this;
+        }
+        Date.prototype.addHours= function(h){
+            this.setHours(this.getHours()+h);
+            return this;
+        }
+    </script>
+    </body>
+</html>

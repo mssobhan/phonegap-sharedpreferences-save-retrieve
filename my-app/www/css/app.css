@@ -1,0 +1,14 @@
+.bg-image {
+  position: fixed;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background: url('../img/bg-3c.jpg') no-repeat center;
+}
+.bg-image1 {
+  position: fixed;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background: url('../img/bg-1c.jpg') no-repeat center;
+}

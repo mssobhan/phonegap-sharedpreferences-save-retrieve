@@ -1,0 +1,15 @@
+#Last build type
+#Fri, 11 Jul 2014 17:33:48 +0600
+<<<<<<<=HEAD
+#Mon, 07 Jul 2014 12:40:06 +0600
+=\=\=\=\=\=\=
+#Mon, 07 Jul 2014 12:33:32 +0600
+>>>>>>>=remotes/origin/anuradha-initial
+
+build.last.target=debug
+
+build.last.is.instrumented=false
+
+build.last.is.packaging.debug=true
+
+build.last.is.signing.debug=true
